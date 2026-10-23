@@ -1,0 +1,163 @@
+{
+  "mode": "subset-pilot",
+  "files": [
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+    "MachineLearningCVE/Wednesday-workingHours.pcap_ISCX.csv"
+  ],
+  "max_rows_per_file": 50000,
+  "chunk_size": 10000,
+  "minimum_free_space_threshold_bytes": 5368709120,
+  "preflight_free_bytes": 7244406784,
+  "rows_processed": 100000,
+  "measurements": [
+    {
+      "stage": "database-setup",
+      "elapsed_seconds": 0.109,
+      "rows_processed": 0,
+      "staging_bytes": 49152,
+      "volume_free_bytes": 7244140544,
+      "process_memory": {
+        "peak_working_set_bytes": 146735104,
+        "working_set_bytes": 146735104,
+        "peak_pagefile_bytes": 850575360,
+        "private_usage_bytes": 850575360
+      }
+    },
+    {
+      "stage": "ingestion-complete",
+      "elapsed_seconds": 370.844,
+      "rows_processed": 100000,
+      "staging_bytes": 492503040,
+      "volume_free_bytes": 6708957184,
+      "process_memory": {
+        "peak_working_set_bytes": 243318784,
+        "working_set_bytes": 215478272,
+        "peak_pagefile_bytes": 947044352,
+        "private_usage_bytes": 920600576
+      }
+    },
+    {
+      "stage": "quality-validation-complete",
+      "elapsed_seconds": 370.844,
+      "rows_processed": 100000,
+      "staging_bytes": 492503040,
+      "volume_free_bytes": 6708957184,
+      "process_memory": {
+        "peak_working_set_bytes": 243318784,
+        "working_set_bytes": 215482368,
+        "peak_pagefile_bytes": 947044352,
+        "private_usage_bytes": 920600576
+      }
+    },
+    {
+      "stage": "group-splitting-complete",
+      "elapsed_seconds": 378.297,
+      "rows_processed": 100000,
+      "staging_bytes": 496037888,
+      "volume_free_bytes": 6704771072,
+      "process_memory": {
+        "peak_working_set_bytes": 243318784,
+        "working_set_bytes": 216584192,
+        "peak_pagefile_bytes": 947044352,
+        "private_usage_bytes": 921661440
+      }
+    },
+    {
+      "stage": "training-median-fit-complete",
+      "elapsed_seconds": 460.39,
+      "rows_processed": 100000,
+      "staging_bytes": 496037888,
+      "volume_free_bytes": 6702432256,
+      "process_memory": {
+        "peak_working_set_bytes": 243318784,
+        "working_set_bytes": 216588288,
+        "peak_pagefile_bytes": 947044352,
+        "private_usage_bytes": 921661440
+      }
+    },
+    {
+      "stage": "training-scaler-fit-complete",
+      "elapsed_seconds": 519.75,
+      "rows_processed": 100000,
+      "staging_bytes": 496037888,
+      "volume_free_bytes": 6692294656,
+      "process_memory": {
+        "peak_working_set_bytes": 300314624,
+        "working_set_bytes": 220459008,
+        "peak_pagefile_bytes": 1038671872,
+        "private_usage_bytes": 958799872
+      }
+    },
+    {
+      "stage": "transform-train-complete",
+      "elapsed_seconds": 628.234,
+      "rows_processed": 100000,
+      "staging_bytes": 600283589,
+      "volume_free_bytes": 6592425984,
+      "process_memory": {
+        "peak_working_set_bytes": 300314624,
+        "working_set_bytes": 235200512,
+        "peak_pagefile_bytes": 1038671872,
+        "private_usage_bytes": 973262848
+      }
+    },
+    {
+      "stage": "transform-validation-complete",
+      "elapsed_seconds": 652.703,
+      "rows_processed": 100000,
+      "staging_bytes": 622629177,
+      "volume_free_bytes": 6569291776,
+      "process_memory": {
+        "peak_working_set_bytes": 300314624,
+        "working_set_bytes": 236400640,
+        "peak_pagefile_bytes": 1038671872,
+        "private_usage_bytes": 974761984
+      }
+    },
+    {
+      "stage": "transform-test-complete",
+      "elapsed_seconds": 676.125,
+      "rows_processed": 100000,
+      "staging_bytes": 644973839,
+      "volume_free_bytes": 6546038784,
+      "process_memory": {
+        "peak_working_set_bytes": 300314624,
+        "working_set_bytes": 237744128,
+        "peak_pagefile_bytes": 1038671872,
+        "private_usage_bytes": 976441344
+      }
+    },
+    {
+      "stage": "artifacts-ready",
+      "elapsed_seconds": 677.703,
+      "rows_processed": 100000,
+      "staging_bytes": 644992161,
+      "volume_free_bytes": 6546006016,
+      "process_memory": {
+        "peak_working_set_bytes": 300314624,
+        "working_set_bytes": 237764608,
+        "peak_pagefile_bytes": 1038671872,
+        "private_usage_bytes": 976445440
+      }
+    },
+    {
+      "stage": "publish-ready",
+      "elapsed_seconds": 678.14,
+      "rows_processed": 100000,
+      "staging_bytes": 148954273,
+      "volume_free_bytes": 7042142208,
+      "process_memory": {
+        "peak_working_set_bytes": 300314624,
+        "working_set_bytes": 216559616,
+        "peak_pagefile_bytes": 1038671872,
+        "private_usage_bytes": 953696256
+      }
+    }
+  ],
+  "measurement_limitations": [
+    "Memory counters are process-lifetime peaks read at stage checkpoints.",
+    "Staging-byte samples are taken at stage boundaries and may miss short-lived SQLite temporary or journal peaks.",
+    "The final staging-byte sample is taken before writing this metrics file.",
+    "The configured free-space threshold is a start gate, not a sufficiency guarantee."
+  ]
+}

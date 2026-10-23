@@ -1,0 +1,2 @@
+﻿Preflight C free bytes=7246442496 required bytes=5368709120 started=2026-10-22T13:42:38.0831678+05:30
+Attempt interrupted by PowerShell treating Python progress stderr as terminating; no preprocessing process remains; this run-owned staging directory is being cleaned before retry.

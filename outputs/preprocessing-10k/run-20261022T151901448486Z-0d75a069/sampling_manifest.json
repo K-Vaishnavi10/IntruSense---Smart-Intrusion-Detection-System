@@ -1,0 +1,246 @@
+{
+  "sample_size": 10000,
+  "seed": 42,
+  "row_cap_per_file": 25000,
+  "row_cap_excludes_header": true,
+  "source_files": [
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+    "MachineLearningCVE/Friday-WorkingHours-Morning.pcap_ISCX.csv",
+    "MachineLearningCVE/Monday-WorkingHours.pcap_ISCX.csv",
+    "MachineLearningCVE/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+    "MachineLearningCVE/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+    "MachineLearningCVE/Tuesday-WorkingHours.pcap_ISCX.csv",
+    "MachineLearningCVE/Wednesday-workingHours.pcap_ISCX.csv"
+  ],
+  "source_file_metadata": {
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": {
+      "size_bytes": 77123859,
+      "modified_time_ns": 1792586878759550200
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+      "size_bytes": 76906168,
+      "modified_time_ns": 1792586877946726300
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Morning.pcap_ISCX.csv": {
+      "size_bytes": 58316725,
+      "modified_time_ns": 1792586877336773200
+    },
+    "MachineLearningCVE/Monday-WorkingHours.pcap_ISCX.csv": {
+      "size_bytes": 176927918,
+      "modified_time_ns": 1792586876895366900
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": {
+      "size_bytes": 83102436,
+      "modified_time_ns": 1792586875156299000
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": {
+      "size_bytes": 52023263,
+      "modified_time_ns": 1792586874344148900
+    },
+    "MachineLearningCVE/Tuesday-WorkingHours.pcap_ISCX.csv": {
+      "size_bytes": 135078995,
+      "modified_time_ns": 1792586873889855300
+    },
+    "MachineLearningCVE/Wednesday-workingHours.pcap_ISCX.csv": {
+      "size_bytes": 225166395,
+      "modified_time_ns": 1792586872684382800
+    }
+  },
+  "rows_inspected_per_file": {
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": 25000,
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": 25000,
+    "MachineLearningCVE/Friday-WorkingHours-Morning.pcap_ISCX.csv": 25000,
+    "MachineLearningCVE/Monday-WorkingHours.pcap_ISCX.csv": 25000,
+    "MachineLearningCVE/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": 25000,
+    "MachineLearningCVE/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": 25000,
+    "MachineLearningCVE/Tuesday-WorkingHours.pcap_ISCX.csv": 25000,
+    "MachineLearningCVE/Wednesday-workingHours.pcap_ISCX.csv": 25000
+  },
+  "candidate_rows": 200000,
+  "candidate_binary_class_counts": {
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": {
+      "0": 20111,
+      "1": 4889
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+      "0": 24993,
+      "1": 7
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Morning.pcap_ISCX.csv": {
+      "0": 24998,
+      "1": 2
+    },
+    "MachineLearningCVE/Monday-WorkingHours.pcap_ISCX.csv": {
+      "0": 25000,
+      "1": 0
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": {
+      "0": 25000,
+      "1": 0
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": {
+      "0": 24703,
+      "1": 297
+    },
+    "MachineLearningCVE/Tuesday-WorkingHours.pcap_ISCX.csv": {
+      "0": 22970,
+      "1": 2030
+    },
+    "MachineLearningCVE/Wednesday-workingHours.pcap_ISCX.csv": {
+      "0": 24999,
+      "1": 1
+    }
+  },
+  "candidate_label_counts": {
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": {
+      "BENIGN": 20111,
+      "DDoS": 4889
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+      "BENIGN": 24993,
+      "PortScan": 7
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Morning.pcap_ISCX.csv": {
+      "BENIGN": 24998,
+      "Bot": 2
+    },
+    "MachineLearningCVE/Monday-WorkingHours.pcap_ISCX.csv": {
+      "BENIGN": 25000
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": {
+      "BENIGN": 25000
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": {
+      "BENIGN": 24703,
+      "Web Attack � Brute Force": 297
+    },
+    "MachineLearningCVE/Tuesday-WorkingHours.pcap_ISCX.csv": {
+      "BENIGN": 22970,
+      "FTP-Patator": 2030
+    },
+    "MachineLearningCVE/Wednesday-workingHours.pcap_ISCX.csv": {
+      "BENIGN": 24999,
+      "DoS slowloris": 1
+    }
+  },
+  "selection_quotas_per_file_and_class": {
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": {
+      "0": 1005,
+      "1": 245
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+      "0": 1249,
+      "1": 1
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Morning.pcap_ISCX.csv": {
+      "0": 1249,
+      "1": 1
+    },
+    "MachineLearningCVE/Monday-WorkingHours.pcap_ISCX.csv": {
+      "0": 1249,
+      "1": 0
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": {
+      "0": 1249,
+      "1": 0
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": {
+      "0": 1235,
+      "1": 16
+    },
+    "MachineLearningCVE/Tuesday-WorkingHours.pcap_ISCX.csv": {
+      "0": 1148,
+      "1": 103
+    },
+    "MachineLearningCVE/Wednesday-workingHours.pcap_ISCX.csv": {
+      "0": 1249,
+      "1": 1
+    }
+  },
+  "selected_rows_per_file": {
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": 1250,
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": 1250,
+    "MachineLearningCVE/Friday-WorkingHours-Morning.pcap_ISCX.csv": 1250,
+    "MachineLearningCVE/Monday-WorkingHours.pcap_ISCX.csv": 1249,
+    "MachineLearningCVE/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": 1249,
+    "MachineLearningCVE/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": 1251,
+    "MachineLearningCVE/Tuesday-WorkingHours.pcap_ISCX.csv": 1251,
+    "MachineLearningCVE/Wednesday-workingHours.pcap_ISCX.csv": 1250
+  },
+  "selected_binary_class_counts": {
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": {
+      "0": 1005,
+      "1": 245
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+      "0": 1249,
+      "1": 1
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Morning.pcap_ISCX.csv": {
+      "0": 1249,
+      "1": 1
+    },
+    "MachineLearningCVE/Monday-WorkingHours.pcap_ISCX.csv": {
+      "0": 1249,
+      "1": 0
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": {
+      "0": 1249,
+      "1": 0
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": {
+      "0": 1235,
+      "1": 16
+    },
+    "MachineLearningCVE/Tuesday-WorkingHours.pcap_ISCX.csv": {
+      "0": 1148,
+      "1": 103
+    },
+    "MachineLearningCVE/Wednesday-workingHours.pcap_ISCX.csv": {
+      "0": 1249,
+      "1": 1
+    }
+  },
+  "selected_label_counts": {
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": {
+      "BENIGN": 1005,
+      "DDoS": 245
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+      "BENIGN": 1249,
+      "PortScan": 1
+    },
+    "MachineLearningCVE/Friday-WorkingHours-Morning.pcap_ISCX.csv": {
+      "BENIGN": 1249,
+      "Bot": 1
+    },
+    "MachineLearningCVE/Monday-WorkingHours.pcap_ISCX.csv": {
+      "BENIGN": 1249
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": {
+      "BENIGN": 1249
+    },
+    "MachineLearningCVE/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": {
+      "BENIGN": 1235,
+      "Web Attack � Brute Force": 16
+    },
+    "MachineLearningCVE/Tuesday-WorkingHours.pcap_ISCX.csv": {
+      "BENIGN": 1148,
+      "FTP-Patator": 103
+    },
+    "MachineLearningCVE/Wednesday-workingHours.pcap_ISCX.csv": {
+      "BENIGN": 1249,
+      "DoS slowloris": 1
+    }
+  },
+  "selection_method": "Stratify by relative source CSV and binary class; reserve one row for each nonempty stratum, apportion the remaining quota proportionally with largest remainders, then select rows with the lowest SHA-256 priority of seed, relative path, and 1-based source row number.",
+  "bounded_passes": {
+    "candidate_counting": 1,
+    "priority_selection": 1,
+    "selected_row_ingestion": 1,
+    "maximum_data_rows_per_file_per_pass": 25000
+  },
+  "rows_beyond_cap_inspected": false,
+  "limitation": "Rows after the configured per-file cap were not inspected; rare attacks occurring later in a CSV may be absent from this sample."
+}

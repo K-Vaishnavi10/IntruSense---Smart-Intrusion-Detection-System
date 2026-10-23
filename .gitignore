@@ -1,0 +1,15 @@
+# Python environment and generated caches
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated model artifacts
+/models/
+
+# Manually downloaded raw dataset files
+/data/raw/*
+!/data/raw/.gitkeep
